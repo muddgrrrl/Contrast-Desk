@@ -22,3 +22,11 @@ python3 contrast_desk.py f090bd 211a2b
 ```
 
 Requires Python 3.9+. The tool compares two opaque sRGB colors. Use `--require aa`, `aa-large`, `aaa`, or `aaa-large` to return an exit status of 1 when a pair falls short. A color-pair check covers contrast only. [MIT](LICENSE)
+
+## Development
+
+Run the same dependency-free regression tests used in GitHub Actions.
+
+```sh
+python3 -m unittest discover -s tests -v
+```
